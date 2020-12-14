@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Strona logowania</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Sign In </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+ <!--   <script src="login.js"></script> -->
+</head>
+
+<body>
+<!-- Formularz logowania się do systemu -->
+<form class="box" action="LoginScreen.html" name="form1" method="POST">
+
+    <h1> Login </h1>
+    <input type="text" name="user" placeholder="Eneter Username/E-mail" id="username">
+    <input type="password" name="pass" placeholder="Enter Password" id="password">
+    <!--<input type="sumbit" name="" value="Login" onClick="validate()"-->
+    <input type="button" value="Zaloguj się" id="klik">
+    <input type="button" value="Zarejestruj się" id="klik2" >
+</form>
+
+<script>
+    document.querySelector("#klik").onclick = () => {
+        let username = document.querySelector("#username")
+        let password = document.querySelector("#password")
+        if (username.value == "" || password.value == "") {
+            alert("Username or Password Field Cannot Be Empty")
+        }
+        else {
+            fetch("http://localhost:2137/login", {
+                method: "post",
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({username: username.value, password: password.value})
+            }).then(res => {
+                res.text().then(t => {
+                    if (res.status === 202) {
+                        localStorage.setItem("token", t)
+                        window.open("Pracownik.html","_self")
+                    }
+                    if (!res.ok) {
+                        alert(t)
+                    }
+                })
+            })
+        }
+    }
+
+    document.querySelector("#klik2").onclick = () => {
+        console.log("Nie działa ok")
+        window.open("register.html", "_self")
+    }
+
+</script>
+
+</body>
+
+</html>
+
+
+
+

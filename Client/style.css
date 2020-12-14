@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-image: url(8.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.border {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.main {
+    max-width: 1850px;
+    margin: auto;
+}
+
+.logo ul {
+    float: left;
+}
+
+.logo img {
+    float: left;
+    width: 175px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.title h2 {
+    color: #fff;
+    font-size: 16px;
+}
+
+.oferta {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cennik {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cennik h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.cennik h2 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.cennik td {
+    background-image: url(8.jpg);
+    padding: 25px;
+    text-align: center;
+    color: white;
+    width: 10px;
+    height: 10px
+}
+
+.floatLeft {
+    width: 25%;
+    float: left;
+}
+
+.floatRight {
+    width: 25%;
+    float: right;
+}
+
+.container {
+    overflow: hidden;
+}
+
+footer {
+    background-image: url(8.jpg);
+    padding: 2px;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    max-width: 1%;
+    height: auto;
+}
+
+body {
+    background: rgb(244, 211, 225);
+    background: radial-gradient(circle, rgba(244, 211, 225, 0.8631827731092436) 0%,
+    rgba(148, 190, 233, 0.8687850140056023) 100%);
+}

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(10.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-size: cover
+}
+
+form {
+    width: 300px;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(200%, 75%);
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+form h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+form input[type="text"], .box input[type="password"] {
+    border: none;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 25px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus {
+    width: 250px;
+    border-color: #ffc400ec;
+}
+
+form input[type="sumbit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #ffc400ec;
+    padding: 12px 25px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+
+form input[type="sumbit"]:hover {
+    background: #ffc400ec;
+}
+
+form input[type="button"] {
+    border: 0;
+    background: none;
+    display: inline;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #ffc400ec;
+    padding: 12px 30px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+
+form input[type="button"]:hover {
+    background: #ffc400ec;
+}

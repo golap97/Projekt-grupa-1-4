@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Kontakt</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Linkowanie style.css -->
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+    <body>
+
+        <!-- Header -->
+        <header>
+            <div class="main">
+
+                <div class="logo">
+                    <a href="MainPage.html"><img src="logo.png"></a>
+                </div>
+
+                <!-- Pasek nawigacyjny -->
+                <ul id="menu">
+                    <li><a href="oNas.html">O nas</a></li>
+                    <li><a href="Cennik.html">Cennik</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                    <li><a href="LoginScreen.html">Zaloguj się</a></li>
+                </ul>
+                <!-- Formularz kontaktowy -->
+                <div class="title">
+
+                    <h2>Formularz kontaktowy:</h2>
+
+                    <form class="formularz" action="kilerek96@gmail.com" method="post">
+
+                            <p>Imię:
+                            <input type="text" name="imie" value="" size="30"/></p>
+                            
+                            <p>Nazwisko:
+                            <input type="text" name="nazwisko" value="" size="30"/></p>
+                            
+                            <p>E-mail:
+                            <input type="email" name="mail" value="" size="30"/></p>
+
+                            <h2>Zaznacz odpowiednie pola</h2>
+                                        <input type="checkbox" name="client" value="klientprywatny"/>Prywatny<br/>
+                                        <input type="checkbox" name="client" value="klientfirma"/>Firma<br/>
+
+                            Twoje uwagi:<br/>
+                            <textarea name="komentarz" rows="10" cols="60">
+                            </textarea>
+
+                            <p>
+                                <input type="submit" value="Wyślij"/>
+                                <input type="reset" value="Usuń"/>
+                            </p>
+                    </form>
+                </div>
+            </div>    
+        </header>
+
+        <footer>
+            <p>
+                <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com"><img src="yt.png" alt="Youtube"> </a>
+                <a href="https://www.facebook.com"><img src="fb.png" alt="Facebook"> </a>
+             </p>
+        </footer>
+
+    </body>
+</html>
